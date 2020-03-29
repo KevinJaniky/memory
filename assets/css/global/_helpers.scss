@@ -1,0 +1,13 @@
+$y : 0;
+$nbFruit : 18;
+@mixin card_generator{
+  @for $i from 0 through $nbFruit{
+    .f#{$i}.card {
+      background-position-y: $y;
+    }
+    $y: $y - 100px;
+  }
+}
+
+
+@include card_generator

@@ -1,0 +1,147 @@
+.f0.card {
+  background-position-y: 0; }
+
+.f1.card {
+  background-position-y: -100px; }
+
+.f2.card {
+  background-position-y: -200px; }
+
+.f3.card {
+  background-position-y: -300px; }
+
+.f4.card {
+  background-position-y: -400px; }
+
+.f5.card {
+  background-position-y: -500px; }
+
+.f6.card {
+  background-position-y: -600px; }
+
+.f7.card {
+  background-position-y: -700px; }
+
+.f8.card {
+  background-position-y: -800px; }
+
+.f9.card {
+  background-position-y: -900px; }
+
+.f10.card {
+  background-position-y: -1000px; }
+
+.f11.card {
+  background-position-y: -1100px; }
+
+.f12.card {
+  background-position-y: -1200px; }
+
+.f13.card {
+  background-position-y: -1300px; }
+
+.f14.card {
+  background-position-y: -1400px; }
+
+.f15.card {
+  background-position-y: -1500px; }
+
+.f16.card {
+  background-position-y: -1600px; }
+
+.f17.card {
+  background-position-y: -1700px; }
+
+.f18.card {
+  background-position-y: -1800px; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #E8E9F3;
+  font-family: 'Roboto', sans-serif; }
+
+#memory {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.content {
+  display: flex;
+  height: 100%; }
+  .content .sidebar {
+    text-align: center;
+    flex: 1;
+    background: white;
+    padding: 40px;
+    box-shadow: 1px 1px 19px 0 #e6e6e6; }
+    .content .sidebar .info .timer {
+      font-size: 35px;
+      font-weight: bold; }
+      .content .sidebar .info .timer .text_timer {
+        margin-left: 10px; }
+    .content .sidebar .info .card_state {
+      text-align: center;
+      font-size: 20px;
+      margin: 0 0 10px 0; }
+    .content .sidebar .info button {
+      color: #fff;
+      background-color: #003b79;
+      border-color: #003b79;
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      border-radius: 4px;
+      height: 40px;
+      width: 100%;
+      font-size: 18px;
+      margin-top: 10px; }
+      .content .sidebar .info button:hover {
+        background-color: #054f9a;
+        border-color: #054f9a; }
+    .content .sidebar .game_state p {
+      border: 1px solid #e0e0e0;
+      padding: 20px 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 19px; }
+    .content .sidebar .best_time {
+      margin-top: 40px; }
+      .content .sidebar .best_time table {
+        margin: auto; }
+        .content .sidebar .best_time table tbody tr {
+          text-align: center;
+          font-size: 13px; }
+  .content #memory {
+    flex: 3;
+    min-width: 780px; }
+
+.card {
+  flex: 1;
+  height: 100px;
+  margin: 5px;
+  background: #4b4b4b;
+  border-radius: 5px; }
+  .card.show, .card.fixed {
+    background-image: url("/assets/image/cards.png");
+    background-repeat: no-repeat; }
+
+.plateau {
+  width: 760px;
+  padding: 5px; }
+  .plateau .row {
+    display: flex; }
+
+.progressbar_container {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background: white; }
+  .progressbar_container .progressbar {
+    height: 10px;
+    background: #003b79;
+    width: 0; }

@@ -1,0 +1,12 @@
+.card {
+  flex: 1;
+  height: 100px;
+  margin: 5px;
+  background: #4b4b4b;
+  border-radius: 5px;
+
+  &.show,&.fixed {
+    background-image: url('/assets/image/cards.png');
+    background-repeat: no-repeat;
+  }
+}
