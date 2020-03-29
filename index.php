@@ -1,8 +1,10 @@
 <?php
 // On appelle notre autoload pour pouvoir utiliser les classes PHP
 require_once './autoload.php';
+/**
+ * @var $game GameController
+ */
 $game = new GameController();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,12 +39,13 @@ $game = new GameController();
                 </thead>
                 <tbody>
                 <?php
+                // On récupère les meilleurs temps
                 $best = $game->getBestTimer();
                 if (!empty($best)) {
                     foreach ($best as $b) {
                         ?>
                         <tr>
-                            <td><?php echo date('d/m/Y H:i',strtotime($b['created_at'])) ?></td>
+                            <td><?php echo date('d/m/Y H:i', strtotime($b['created_at'])) ?></td>
                             <td><?php echo(240 - $b['timer']) ?></td>
                         </tr>
                         <?php
@@ -86,10 +89,8 @@ $game = new GameController();
         <div class="progressbar"></div>
     </div>
 </div>
-
 </body>
-<script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
