@@ -20,7 +20,7 @@ class  Game extends App
     }
 
     public function getBestTime(){
-        $sql = 'SELECT * FROM best_time ORDER BY timer ASC';
+        $sql = 'SELECT * FROM best_time ORDER BY timer DESC';
         $query = $this->bdd->prepare($sql);
         $query->execute();
         return $query->fetchAll();
