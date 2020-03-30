@@ -28,9 +28,3 @@ class App
     }
 
 }
-
-/*
- * TODO : Commenter le code
- * TODO : Publier l'app
- * TODO : mettre sur github
- */

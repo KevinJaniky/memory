@@ -22,3 +22,7 @@ COMMIT;
 Créer un fichier `config.php` via `config_sample.php` et renseigner les informations de connexion.
 
 Lancer le jeu sur votre serveur et c'est partie
+
+
+TODO : 
+La partie responsive n'est pas encore bien géré. 
